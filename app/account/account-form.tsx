@@ -2,7 +2,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { Database } from '@/types/supabase'
 import { Session, createClientComponentClient } from '@supabase/auth-helpers-nextjs'
-import Avatars from './avatar'
+import Avatar from './avatar'
 
 export default function AccountForm({ session }: { session: Session | null }) {
   const supabase = createClientComponentClient<Database>()
